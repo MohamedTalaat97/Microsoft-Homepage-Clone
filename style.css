@@ -1,4 +1,12 @@
 /* header */
+
+.menu-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 180px;
+}
+
 header .grid {
     grid-template-columns: 1fr 6fr;
     justify-items: start;
@@ -13,9 +21,7 @@ i {
     color: black;
 }
 
-
 header ul li {
-
     margin: 0 10px;
     padding: 0 10px;
 }
@@ -25,12 +31,11 @@ header ul li a {
 }
 
 header ul li a:hover {
-
     border-bottom: 2px solid black;
 }
 
-/* showcase */
 
+/* showcase */
 
 .showcase i {
     color: black;
@@ -41,7 +46,6 @@ header ul li a:hover {
     height: 70vh;
     background-position: center;
     background-size: cover;
-
 }
 
 .btn {
@@ -54,8 +58,8 @@ header ul li a:hover {
 
 
 /* cards */
-.cards {
 
+.cards {
     margin-top: 20px;
 }
 
@@ -63,7 +67,9 @@ header ul li a:hover {
     color: #006788;
 }
 
+
 /* xbox */
+
 .xbox .container {
     margin: 20px auto;
     background-image: url(img/xbox.jpg);
@@ -72,19 +78,66 @@ header ul li a:hover {
     background-size: cover;
     padding: 2%;
     color: white;
-
 }
 
 .xbox .btn {
     color: black;
     background-color: white;
     margin: 0;
-
 }
 
 .btn:hover {
     background-color: #dddddd;
-
 }
 
-/* carbon  */
+
+/* links */
+
+.links {
+    background-color: lightgrey;
+    margin-top: 40px;
+    padding: 70px 0;
+    line-height: 2.1;
+}
+
+.links h3 {
+    border-bottom: 1px solid #333333;
+}
+
+
+/* footer */
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer li a {
+    margin: 0 5px;
+    font-size: 12px;
+}
+
+.links .grid {
+    grid-template-columns: repeat(6, 1fr);
+    align-items: flex-start;
+}
+
+footer .container {
+    justify-content: space-between;
+}
+
+footer {
+    background-color: lightgrey;
+}
+
+
+/* media queries */
+
+@media(max-width :700px) {
+    .cards .grid {
+        grid-template-columns: 1fr;
+    }
+    .links .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
