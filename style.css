@@ -52,3 +52,13 @@ header ul li a:hover {
 .btn:hover {
     background-color: #222222;
 }
+
+/* cards */
+.cards {
+
+    margin-top: 20px;
+}
+
+.cards a {
+    color: #006788;
+}
